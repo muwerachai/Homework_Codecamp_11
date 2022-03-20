@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        html{
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(202, 197, 206, 0.644);
+            height: 80vh;
+        }
+        .main-l{
+    
+            flex: 1 1 50%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-r{
+            
+            flex: 1 1 50%;
+            min-width: 300px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @media(max-width:700px){
+            .fb{
+                text-align: center;
+            }
+        }
+        
+        .frmlogin{
+            background-color: white;
+            width: 250px;
+            height: auto;
+         
+            padding:20px;
+         
+            box-shadow: 5px 5px 20px rgba(202, 197, 206, 0.644);
+            border-radius: 10px;
+        }
+       
+        input[type=text],input[type=password]{
+            width: 100%;
+            height: 2em;
+            
+
+        }
+        input[type=submit]{
+            width:100%;
+            height: 2em;
+            background-color: rgba(16, 49, 236, 0.9);
+            color:white;
+            border:none;
+            border-radius: 5px;
+
+        }
+        input[type=button]{
+            height: 2em;
+            color:white;
+            background-color: rgba(4, 179, 4, 0.9);
+            border: none;
+            border-radius: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="main-l">
+                <h1 style="font-family: klavika  ;font-size: 3em;font-weight: bold; color: rgba(16, 49, 236, 0.9);">facebook</h1>
+                <h3>Facebook ช่วยคุณเชื่อมต่อและแชร์กับ </h3>
+                <h3>ผู้คนมากมายรอบตัวคุณ</h3>
+        </div>
+        <div class="main-r">
+            <div class="frmlogin">
+                <form action="#">
+                    <input type="text" name="email" id="email" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ">
+                    <br>
+                    <br>
+                     <input type="password" name="pword" id="pword" placeholder="รหัสผ่าน">
+                     <br>
+                     <br>
+                     <input type="submit" value="เข้าสู่ระบบ">
+                     <br>
+                     <p style="text-align: center;color: rgba(16, 49, 236, 0.8);">ลืมรหัสผ่านใช่หรือไม่</p>
+                    <hr>
+                    <input type="button" value="สร้างบัญชีใหม่">
+                    <br>
+                    
+
+                </form>
+            </div>
+            <div class="frmfooter">
+            
+                <p><a href="#" title="สร้างเพจ"><b>สร้างเพจ</b></a> สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ</p>
+            </div>
+           
+        </div>
+    </main>
+    <footer>
+        <br>
+        ภาษาไทย English (UK) 日本語 中文(简体) Tiếng Việt Français (France) Deutsch Русский Español Português (Brasil) Italiano
+        <br>
+        <hr>
+        <a href="#" title="สมัครใช้งาน Facebook"> สมัคร </a>
+        <a href="#" title="เข้าสู่ระบบ Facebook"> เข้าสู่ระบบ </a>
+        <a href="#" title="เข้าไปดู Messenger"> Messenger </a>
+        <a href="#" title="Facebook Lite สำหรับ Android"> Facebook Lite </a>
+        <a href="#" title="เข้าไปดู Messenger"> Watch </a>
+        <a href="#" title="เข้าไปดู Messenger"> ผู้คน </a>
+        <a href="#" title="เข้าไปดู Messenger"> เพจ </a>
+        <a href="#" title="เข้าไปดู Messenger"> หมวดหมู่เพจ </a>
+        <a href="#" title="เข้าไปดู Messenger"> สถานที่ </a>
+        <a href="#" title="เข้าไปดู Messenger"> เกม </a>
+        <a href="#" title="เข้าไปดู Messenger"> ตำแหน่งที่ตั้ง </a>
+        <a href="#" title="เข้าไปดู Messenger"> Marketplace </a>
+        <a href="#" title="เข้าไปดู Messenger"> Facebook Pay </a>
+
+        <p>กลุ่ม งาน Oculus Portal Instagram ในพื้นที่ โครงการระดมทุน บริการ ศูนย์ข้อมูลการลงคะแนนเสียง เกี่ยวกับ สร้างโฆษณา สร้างเพจ</p>
+        <p>ผู้พัฒนา ร่วมงานกับFacebook ความเป็นส่วนตัว คุกกี้ ตัวเลือกโฆษณา เงื่อนไข ความช่วยเหลือ</p>
+        <br>
+        <p>Facebook &copy 2021</p>
+    </footer>
+   
+</body>
+</html>
