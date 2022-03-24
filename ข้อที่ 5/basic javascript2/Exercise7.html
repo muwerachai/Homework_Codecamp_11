@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2: code ทั้งสองอันนี้จะแสดง alert ออกมาเหมือนกันทั้งหมดหรือไม่</title>
+</head>
+<body>
+    <script>
+        let a = 0;
+        while(++a < 5){
+            alert(a); // 1 2 3 4 เพราะ i บวกแล้วเทียบเลย
+        }
+    </script>
+
+    <script>
+        let b = 0;
+        while(b++ < 5){
+            alert(b); // 1 2 3 4 5 เพราะ เอาค่าเก่ามาเทียบก่อน พอจะใช้ alert ค่อยบวกเพิ่ม
+        }
+    </script>
+</body>
+</html>
