@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ให้สร้าง array2 จาก array1 ตามที่โจทย์กำหนด โดยใช้ฟังก์ชัน Array.map()</title>
+</head>
+<body>
+    <script>
+           1.11
+        const array1 = [
+            { name: "apple", birth: "2000-01-01" },
+            { name: "banana", birth: "1990-10-01" },
+            { name: "watermelon", birth: "1985-12-01" }
+        ];
+        const array2 = array1.map( function (n) {
+            let today = new Date();
+            let r = new Date( n["birth"] );
+            n["age"] = (today.getFullYear()) - r.getFullYear();
+            return n
+        } );
+
+    </script>
+   
+</body>
+</html>

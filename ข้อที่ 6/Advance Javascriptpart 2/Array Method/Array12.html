@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ให้สร้าง array2 จาก array1 ตามที่โจทย์กำหนด โดยใช้ฟังก์ชัน Array.map()</title>
+</head>
+<body>
+    <script>
+            1.12
+        const array1 = [
+            { name: "apple", birth: "2000-01-01" },
+            { name: "banana", birth: "1990-10-01" },
+            { name: "watermelon", birth: "1985-12-01" }
+        ];
+        const array2 = array1.map( function(obj) {
+            let date = new Date( obj.birth );
+            let year = date.getFullYear();
+            let day = date.toDateString().toLowerCase();
+            return `<tr> <td> ${obj.name} </td> <td> ${day.slice(8, 11) + day.substr(4, 4)}${year} </td> </tr>)`
+        } );
+
+    </script>
+   
+</body>
+</html>

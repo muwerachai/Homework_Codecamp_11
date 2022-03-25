@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ให้เขียนฟังก์ชัน checkSpam</title>
+</head>
+<body>
+    <script>
+        let str = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, tempora."   
+        function checkSpam() {
+           return ( str.indexOf("xxx") == -1 && str.indexOf("viagra") == -1 ) ?  false : true ; 
+        }
+
+        checkSpam() //false
+    </script>
+</body>
+</html>
